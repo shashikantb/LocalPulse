@@ -1,0 +1,53 @@
+To run the application locally, follow these steps:
+
+Install dependencies: npm install
+Start the development server: npm run dev
+This will start the Next.js development server, and you can view the application in your browser at http://localhost:9002.
+
+=====================================================
+
+in which file it mention string
+
+Gemini
+String constants and text content are present in multiple files, especially in React components and the database initialization.
+
+React components: Files under src/components/ such as PostCard.tsx, PostForm.tsx, and ui components contain text used for rendering the UI.
+Database: src/lib/db.ts contains SQL statements with strings for table creation and data manipulation.
+shashikant
+which file is used for home page
+
+Gemini
+The file used for the home page is src/app/page.tsx.
+
+===========================================================
+
+to run locally
+
+Step 2: Rebuild better-sqlite3 bindings
+Run:
+
+bash
+Copy
+Edit
+npm rebuild better-sqlite3
+If that doesn't work, also try:
+
+bash
+Copy
+Edit
+npm install --build-from-source better-sqlite3
+Step 3: Delete and reinstall node_modules
+Sometimes a clean reinstall helps:
+
+bash
+Copy
+Edit
+rm -rf node_modules package-lock.json
+npm install
+Then run your dev server again:
+
+bash
+Copy
+Edit
+npm run dev
+
